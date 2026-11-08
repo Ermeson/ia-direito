@@ -74,7 +74,7 @@ Construído na hora!
 
 ##### Baixe o conteúdo do contrato em .md
 
-[Texto do link](proposta-servicos-advocaticios.md)
+[Baixe o material](materiais/proposta-servicos-advocaticios.md)
 
 #### Ferramenta
 
@@ -133,11 +133,55 @@ Skill que transforma uma petição inicial em um documento interativo, no qual c
 
 #### Ferramenta
 
-Claude ou Gemini
+Claude ou Gemini + Google Sites
+
+#### Baixe o conteúdo
+
+[Baixe o material](materiais/peticao-consignado-falso-emprestimo.md)
 
 #### Prompt
 
-{prompt}
+```
+# Petição Interativa
+
+Você é um especialista em Legal Design, Visual Law e Pedagogia Jurídica. Sua tarefa é pegar o texto da petição inicial fornecida a seguir e transformá-lo em uma interface web interativa de aprendizagem (HTML/CSS/JavaScript standalone, responsiva e pronta para visualização).
+
+Leve em consideração o tipo de petição anexado e ajuste-se conforme necessário.
+
+### REQUISITOS DA INTERFACE INTERATIVA
+
+1. **Layout em Painel Duplo (Side-by-Side):**
+   - **Coluna Esquerda (Petição Inicial Navegável):** Apresente a estrutura da petição inicial dividida em blocos sanfonados (accordions/cards clicáveis). Cada bloco representa uma seção da peça (ex.: Endereçamento, Qualificação das Partes, Fatos, Fundamentação Jurídica/Direito, Tutela de Urgência, Pedidos e Valor da Causa).
+   - **Coluna Direita (Box Estratégico & Pedagógico):** Painel dinâmico que atualiza automaticamente ao clicar em qualquer bloco da esquerda.
+
+2. **Mecanismo de Interatividade:**
+   - Inicialmente, os blocos da petição podem exibir um resumo ou o título. Ao clicar em um bloco:
+     - O bloco se expande revelando a íntegra ou os trechos principais daquele segmento da petição.
+     - A coluna direita carrega a **Análise Estratégica e Guiada** correspondente àquela seção específica.
+
+3. **Conteúdo da Coluna Direita (Análise Estratégica):**
+   Para cada bloco selecionado, a coluna direita deve exibir obrigatoriamente:
+   - **Objetivo Estratégico:** Qual é a função processual dessa seção e o que o juiz/assessor busca ao lê-la.
+   - **Dicas de Otimização & Visual Law:** O que adicionar ou destacar para aumentar a persuasão (ex.: uso de quadros resumidos, diagramas de fatos, grifos táticos).
+   - **Erros Frequentes a Evitar:** Falhas comuns cometidas na prática forense nessa etapa.
+   - **Checklist Prático:** Lista de verificação com o que não pode faltar no trecho.
+
+4. **Design e Estética:**
+   - Visual limpo, moderno e profissional (estilo dashboard/LMS jurídico).
+   - Uso de cores sóbrias para o texto jurídico e destaques em cores contrastantes para os boxes pedagógicos.
+   - Tipografia legível e botões intuitivos de expansão/revelação.
+   - Estética minimalista e light mode.
+
+5. *Stack*
+
+   - Construa em formato de HTML estático, isto é: HTML, CSS e JavaScript;
+   - Gere um único arquivo HTML;
+   - Use Tailwind CSS via CDN.
+
+### ESTRUTURA DA PETIÇÃO INICIAL PARA APLICAR O MODELO
+
+[TEXTO DA PETIÇÃO EM ANEXO]
+```
 
 ### 6 - Cofre de Prompts
 
