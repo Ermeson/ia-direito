@@ -1,37 +1,44 @@
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 0
+  theme: minimal
+---
+
 # Inteligência Artificial no Direito
 
-## Não vamos falar sobre:
+## Não vamos falar sobre
 
 - Engenharia de Prompts
-- Alucinação de IA 
+- Alucinação de IA
 - O que pode, o que não pode.
 
-## Vamos falar sobre: 
+## Vamos falar sobre
 
 - Otimizações
 - Skills
-- Agentes 
-- Artefatos 
+- Agentes
+- Artefatos
 
-## Taxonomias 
+## Taxonomias
 
-### Agentes de IA 
+### Agentes de IA
 
 #### O que são
 
-[descreva] 
+Sistemas de IA que, a partir de um objetivo, planejam e executam ações de maneira autônoma (buscar informações, usar ferramentas, gerar documentos), tomando decisões intermediárias sem que cada passo precise ser instruído manualmente.
 
 ### Skills
 
 #### O que são
 
-[descreva] 
+Conjuntos de instruções, modelos e conhecimentos específicos, empacotados e reutilizáveis, que ensinam a IA a executar sempre da mesma forma uma tarefa recorrente (ex: elaborar uma petição), sem precisar reescrever o prompt a cada uso.
 
 ### Artefatos
 
 #### O que são
 
-[descreva] 
+Conteúdos ou aplicações gerados pela IA (documentos, páginas, interfaces interativas) que existem como produtos autônomos, podendo ser visualizados, editados e compartilhados fora da própria conversa com o modelo.
 
 ## Prática
 
@@ -39,19 +46,23 @@
 
 #### Preparação do corpus de conteúdo do modelo
 
-Benefícios de preparar o corpus
+##### Benefícios de preparar o corpus
+
+Melhora a precisão e a relevância das respostas da IA, fornecendo o conteúdo jurídico correto (leis, contratos, jurisprudência) como base de consulta, o que reduz alucinações e permite respostas atualizadas e específicas ao domínio, sem precisar retreinar o modelo.
 
 #### Formato Markdown
 
-O que é
+##### O que é
+
+Formato de texto simples que usa marcações leves (#, *, -, etc.) para estruturar títulos, listas e ênfases, sendo facilmente lido tanto por humanos quanto por modelos de IA, por isso é ideal para preparar documentos jurídicos como base de consulta.
 
 #### Converter PDF em MD
 
-Link para baixar o arquvi em pdf 
+Link para baixar o arquvi em pdf
 
 #### Ferramenta
 
-Gemini 
+Gemini
 
 #### Prompt
 
@@ -61,17 +72,21 @@ Construído na hora!
 
 #### Preparação do conteúdo
 
-Baixe o conteúdo do contrato em .md
+##### Baixe o conteúdo do contrato em .md
+
+[Texto do link](https://exemplo.com)
 
 #### Ferramenta
 
-Gemini 
+Gemini
 
 #### Prompt
 
-{prompt}
+```
+este é o prompt
+```
 
-### 3 - Caso Penal Interativo
+### 3 - Artefato Caso Penal Interativo
 
 #### Preparação do conteúdo
 
@@ -85,13 +100,11 @@ Gemini e Google Sites
 
 {prompt}
 
-### 4 - Engenheiro de Prompts Jurídicos
-
-
+### 4 - Skill Engenheiro de Prompts Jurídicos
 
 #### O que é
 
-[descreva]
+Skill que orienta a IA a elaborar e refinar prompts especializados para tarefas jurídicas, aplicando boas práticas de engenharia de prompts ao contexto do Direito para obter respostas mais precisas e consistentes.
 
 #### Ferramenta
 
@@ -101,11 +114,11 @@ Claude ou Gemini
 
 Construído na hora!
 
-## 5 - Skill de Petição Inicial Interativa Explicada
+### 5 - Skill de Petição Inicial Interativa Explicada
 
 #### O que é
 
-[descreva]
+Skill que transforma uma petição inicial em um documento interativo, no qual cada seção ou termo pode ser explicado passo a passo, facilitando a compreensão do processo e do conteúdo jurídico pelo cliente ou leitor.
 
 #### Ferramenta
 
@@ -115,13 +128,11 @@ Claude ou Gemini
 
 {prompt}
 
-## 6 - Cofre de Prompts
-
-
+### 6 - Cofre de Prompts
 
 #### O que é
 
-[descreva]
+Repositório organizado de prompts testados e reutilizáveis para tarefas jurídicas recorrentes, permitindo padronizar, armazenar e compartilhar as melhores instruções entre a equipe.
 
 #### Ferramenta
 
