@@ -68,22 +68,33 @@ Gemini
 
 Construído na hora!
 
-### 2 - Skill para criar um contrato interativo
+### 2 - Artefato para criar um contrato interativo
 
 #### Preparação do conteúdo
 
 ##### Baixe o conteúdo do contrato em .md
 
-[Texto do link](https://exemplo.com)
+[Texto do link](proposta-servicos-advocaticios.md)
 
 #### Ferramenta
 
-Gemini
+Gemini Canvas
 
 #### Prompt
 
 ```
-este é o prompt
+Crie um web app interativo para uma proposta de prestação de serviços advocatícios. Ao topo, adicione 2 campos: Contratada e Contratante. Ao preencher estes campos, os demais são automaticamente preenchidos (replicando as informações). Além disso, adicione um campo para adicionar o valor total. A UI deve ter a anatomia de uma folha A4 para permitir baixar em PDF. O conteúdo da proposta está anexado em .md. Agora, atenção aos elementos de UI: Use técnicas de arquitetura da informação e visual law para representar os elementos. Use um visual minimalista light mode. Torne o campo de preenchimento de dados colapsável, para liberar espaço para ver o documento. O visual da proposta deve considerar seções em blocos:
+
+- Um box ao topo determinando CONTRATADA E CONTRATANTE;
+- Um box para o OBJETO;
+- FLUXO DE TRABALHO deve ter o formato de timeline de eventos com ícones e textos explicativos;
+- Um box de VALOR;
+- Um box de DESPESAS;
+- A seção de CONDIÇÕES deve ser uma lista com cada item numerado e a descrição da condição. O número em tamanho grande e ao lado a descrição. Use um visual de cards.
+- A seção de ASSINATURAS deve ter 4 blocos de assinatura, em duas colunas, com linhas para assinatura e um ícone de caneta ao lado de cada linha.
+- Na seção de INVESTIMENTO E HONORÁRIOS insira o valor cheio inserido no campo pelo usuário e calcule automaticamente o valor de entrada (considerando 30%) e o restante em 4 parcelas iguais.
+
+Na parte inferior, um botão para baixar em PDF que deve exportar o documento tal qual o visual da página.
 ```
 
 ### 3 - Artefato Caso Penal Interativo
