@@ -109,7 +109,108 @@ Gemini e Google Sites
 
 #### Prompt
 
-{prompt}
+```
+Atue como designer instrucional especializado em ensino de Direito e desenvolvedor front-end. Com base no processo penal anexado, analise o documento e crie uma experiência educacional interativa em um site estático, feito com HTML, CSS e JavaScript.
+
+## Objetivo pedagógico
+
+Ajudar o aluno a compreender o caso e percorrer suas etapas processuais, conectando fatos, provas, decisões, argumentos e fundamentos jurídicos. A experiência deve promover leitura ativa e reflexão: evite transformar o processo em um resumo longo ou em uma página de leitura estática.
+
+## Regras de análise e fidelidade
+
+1. Leia o processo na íntegra antes de definir as seções e os componentes do site.
+2. Primeiro, extraia e organize o conteúdo pertinente. Só então planeje a experiência e escreva o código.
+3. Não invente fatos, provas, argumentos, datas, atos processuais, decisões, dispositivos legais ou fundamentos que não constem no documento.
+4. Diferencie com clareza:
+   - fatos narrados e fatos reconhecidos na decisão;
+   - alegações da acusação e da defesa;
+   - elementos de prova e inferências;
+   - decisões interlocutórias e decisão final;
+   - entendimento do juízo e questões controvertidas.
+5. Preserve o sentido e o contexto das citações. Identifique a página, folha, seção ou outro localizador disponível no documento. Se não houver paginação confiável, indique o trecho ou a seção de origem sem inventar referências.
+6. Quando algo estiver ausente, ilegível ou ambíguo, sinalize isso. Não preencha lacunas por suposição.
+7. Apresente conceitos jurídicos necessários à aprendizagem em linguagem acessível, sem distorcer o conteúdo nem substituir a análise do documento por explicações genéricas.
+8. Não exponha dados pessoais desnecessários. Se houver informações sensíveis, use nomes ou identificadores abreviados na interface, sem alterar a compreensão jurídica do caso.
+
+## Etapa 1 — Mapa analítico do processo
+
+Antes de criar o site, produza um mapa conciso contendo:
+
+- identificação geral do caso, conforme os dados disponíveis;
+- questão central e questões secundárias;
+- linha do tempo dos atos processuais;
+- partes e papéis processuais;
+- narrativa da acusação;
+- versão ou teses da defesa;
+- provas e o que cada elemento pode ou não demonstrar;
+- decisões relevantes e seus fundamentos;
+- resultado do julgamento e consequências indicadas no processo;
+- divergências, limitações documentais ou pontos que exigem cautela;
+- trechos essenciais, com localizadores e breve justificativa pedagógica.
+
+Organize os itens de modo que o aluno consiga distinguir o que é alegação, prova, fundamento e conclusão judicial. Se o documento não contiver alguma informação, registre “não identificado no documento”.
+
+## Etapa 2 — Desenho da experiência de aprendizagem
+
+Com base no mapa, proponha um percurso didático que permita ao aluno explorar o caso do contexto ao julgamento. Selecione apenas as etapas que se aplicam ao processo analisado. Para cada etapa, indique:
+
+- objetivo de aprendizagem;
+- conteúdo do processo usado;
+- interação que ajuda o aluno a pensar ou tomar uma decisão;
+- feedback ou explicação revelada após a interação.
+
+Considere, quando forem pertinentes, recursos como:
+
+- abertura com uma pergunta-problema e orientação de navegação;
+- linha do tempo clicável;
+- painéis expansíveis para acusação, defesa, provas e decisão;
+- caixas de diálogo para revelar explicações, excertos ou contexto;
+- acordeões para aprofundar fundamentos sem sobrecarregar a tela;
+- tooltips para termos jurídicos;
+- comparação entre tese, evidência e resposta judicial;
+- perguntas de checagem, ordenação de etapas ou associação entre provas e questões;
+- pausas de reflexão antes de revelar a decisão;
+- síntese final e questões para discussão.
+
+Não use interações decorativas. Cada componente deve contribuir para a compreensão, a recuperação de informações ou a reflexão crítica do aluno. Dê destaque às partes centrais do caso, mantendo um caminho para explorar o restante do conteúdo relevante.
+
+## Etapa 3 — Implementação do site
+
+Entregue um site estático funcional, com:
+
+- `index.html`;
+- `styles.css`;
+- `script.js`.
+
+Use somente HTML, CSS, JavaScript e TailWind CSS via CDN, sem backend. Evite dependências externas; se alguma for indispensável, explique por quê e ofereça uma alternativa sem ela. Adote uma interface com cores carregadas, estilo cena do crime.
+
+Requisitos de implementação:
+
+- interface responsiva, legível e acessível;
+- navegação clara entre etapas, com indicação de progresso;
+- interações funcionais por teclado e mouse;
+- elementos semânticos, foco visível, rótulos acessíveis e contraste adequado;
+- JavaScript organizado e comentários nos trechos que ajudem a manutenção;
+- conteúdo educacional separado da lógica de interação sempre que possível;
+- sem botões ou controles que aparentem funcionar, mas não tenham ação;
+- sem texto provisório, fatos fictícios ou referências inventadas.
+
+O código deve abrir localmente em um navegador. Inclua instruções curtas para executar o site e explique a estrutura dos arquivos.
+
+## Etapa 4 — Revisão final
+
+Antes de concluir, confira se:
+
+- o mapa analítico foi produzido antes da implementação;
+- as afirmações e citações correspondem ao processo anexado;
+- acusação, defesa, prova e decisão estão claramente diferenciadas;
+- as interações funcionam e apoiam os objetivos de aprendizagem;
+- o aluno consegue percorrer o caso sem precisar ler uma página inteira de texto estático;
+- limitações e informações ausentes estão sinalizadas;
+- o site funciona em telas pequenas e pode ser navegado por teclado.
+
+Apresente o mapa analítico e o desenho didático junto com os arquivos do site. Se não for possível criar arquivos, forneça o conteúdo completo de cada arquivo em blocos separados, com o nome correspondente.
+```
 
 ### 4 - Skill Engenheiro de Prompts Jurídicos
 
